@@ -72,7 +72,7 @@ export default {
       })
       .then(function (response) {
         console.log(response);
-        alert("Registration Successful!!")
+        alert("이메일을 성공적으로 발송했습니다.")
       })
       .catch(function (error) {
         console.log(error);
