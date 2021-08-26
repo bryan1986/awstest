@@ -71,11 +71,11 @@ export default {
         email: item.email
       })
       .then(function (response) {
-        console.log(response);
+        //console.log(response);
         alert("이메일을 성공적으로 발송했습니다.")
       })
       .catch(function (error) {
-        console.log(error);
+        //console.log(error);
         alert(error);
       });
 }
