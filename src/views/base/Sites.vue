@@ -946,18 +946,22 @@ export default {
       return val ? val.length >= 4 : false
     },
     insertSite: function() {
-      axios.post('https://7g3u095i99.execute-api.us-east-1.amazonaws.com/product/site', {
-        sitename: this.SiteName,
-        url: this.URL
+      let that=this;
+
+      axios.post('https://n3zqs6vlic.execute-api.us-east-1.amazonaws.com/filter', {
+        specialty: this.SiteName,
       })
       .then(function (response) {
         console.log(response);
-        alert("Registration Successful!!")
+        that.toDoItems = response.data.map(r => r);
+
       })
       .catch(function (error) {
         console.log(error);
       });
-      this.getSiteList()
+      
+
+      
     },
     getRuleList () {
       let arr = [];
@@ -967,6 +971,19 @@ export default {
               email : this.toDoItems[i][1],
               specialty : this.toDoItems[i][2]})
       }
+      console.log(arr);
+      return arr;
+    },
+    getRuleList2 (response) {
+      console.log(response.data);
+      let arr = [];
+      for (let i= 0;i<=this.toDoItems.length -1;i++) {
+        arr.push(
+            { name : this.toDoItems[i][0],
+              email : this.toDoItems[i][1],
+              specialty : this.toDoItems[i][2]})
+      }
+      console.log(arr);
       return arr;
     },
     getSiteList () {
