@@ -79,7 +79,7 @@ function configRoutes () {
   return [
     {
       path: '/',
-      redirect: '/dashboard',
+      redirect: '/theme/rules',
       name: 'Home',
       component: TheContainer,
       children: [
