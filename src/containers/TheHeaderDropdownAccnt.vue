@@ -9,7 +9,7 @@
       <CHeaderNavLink>
         <div class="c-avatar">
           <img
-            src="img/avatars/6.jpg"
+            src="https://lh3.googleusercontent.com/ogw/ADea4I6OXLYLLEIFAZj-KfWJqekb45OY3BWy7XYkT_mBxA=s32-c-mo"
             class="c-avatar-img "
           />
         </div>

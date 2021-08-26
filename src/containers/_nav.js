@@ -2,16 +2,16 @@ export default [
   {
     _name: 'CSidebarNav',
     _children: [
-      {
-        _name: 'CSidebarNavItem',
-        name: 'Dashboard',
-        to: '/dashboard',
-        icon: 'cil-speedometer',
-        badge: {
-          color: 'primary',
-          text: 'NEW'
-        }
-      },
+      // {
+      //   _name: 'CSidebarNavItem',
+      //   name: 'Dashboard',
+      //   to: '/dashboard',
+      //   icon: 'cil-speedometer',
+      //   badge: {
+      //     color: 'primary',
+      //     text: 'NEW'
+      //   }
+      // },
       // {
       //   _name: 'CSidebarNavTitle',
       //   _children: ['Main']
@@ -48,7 +48,11 @@ export default [
         _name: 'CSidebarNavItem',
         name: '전문가 찾기',
         to: '/base/sites',
-        icon: 'cil-find-in-page'
+        icon: 'cil-find-in-page',
+        badge: {
+          color: 'primary',
+          text: 'NEW'
+        }
       },
       // {
       //   _name: 'CSidebarNavDropdown',

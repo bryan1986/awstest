@@ -96,7 +96,7 @@ function configRoutes () {
         {
           path: 'theme',
           redirect: '/theme/colors',
-          name: 'Main',
+          name: '업무유틸',
           component: {
             render (c) { return c('router-view') }
           },
@@ -123,7 +123,7 @@ function configRoutes () {
             },
             {
               path: 'rules',
-              name: 'Rules',
+              name: '전문분야 입력',
               component: Rules
             },
             {
@@ -172,7 +172,7 @@ function configRoutes () {
         {
           path: 'base',
           redirect: '/base/cards',
-          name: 'Rule Components',
+          name: '업무유틸',
           component: {
             render (c) { return c('router-view') }
           },
@@ -184,7 +184,7 @@ function configRoutes () {
             },
             {
               path: 'sites',
-              name: 'Sites',
+              name: '전문가 찾기',
               component: Sites
             },
             {

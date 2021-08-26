@@ -56,12 +56,12 @@
 </template>
 
 <script>
-// import TheHeaderDropdownAccnt from './TheHeaderDropdownAccnt'
+import TheHeaderDropdownAccnt from './TheHeaderDropdownAccnt'
 
 export default {
   name: 'TheHeader',
   components: {
-    // TheHeaderDropdownAccnt
+    TheHeaderDropdownAccnt
   },
   computed: {
     getMsg () {
