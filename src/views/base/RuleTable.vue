@@ -31,6 +31,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'Table',
   props: {
@@ -63,7 +65,25 @@ export default {
     handleFunction: function(item, index, column, event)
 {
   console.log(item.email);
+
+  axios.post('https://n3zqs6vlic.execute-api.us-east-1.amazonaws.com/sns', {
+        name: item.name,
+        email: item.email
+      })
+      .then(function (response) {
+        console.log(response);
+        alert("Registration Successful!!")
+      })
+      .catch(function (error) {
+        console.log(error);
+        alert(error);
+      });
 }
   }
 }
 </script>
+<style>
+table td {
+  cursor: pointer;
+}
+</style>
