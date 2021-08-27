@@ -105,7 +105,7 @@ export default {
       })
       .then(function (response) {
         console.log(response);
-        alert("성공적으로 등록됐습니다..")
+        alert("성공적으로 등록됐습니다....")
       })
       .catch(function (error) {
         console.log(error);
